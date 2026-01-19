@@ -1,5 +1,5 @@
 {% set name = "diffhalos" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffhalos/archive/v{{ version }}.tar.gz
-  sha256: 35c980a1326ca9f74bb0ae5f1e0773eb3d15b32e455f54e755aa62b06398aaf3
+  sha256: 2a11d73ea724fc6d8ebb77ce6ce08265c667cb9637925352f227adea2f16dc5e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -26,6 +26,8 @@ requirements:
     - numpy
     - jax
     - diffmah
+    - dsps
+    - flowjax
 
 test:
   imports:
