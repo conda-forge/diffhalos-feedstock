@@ -27,6 +27,7 @@ requirements:
     - jax
     - diffmah
     - dsps
+    - flowjax
 
 test:
   imports:
