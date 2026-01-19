@@ -26,6 +26,7 @@ requirements:
     - numpy
     - jax
     - diffmah
+    - dsps
 
 test:
   imports:
