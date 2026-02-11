@@ -1,5 +1,5 @@
 {% set name = "diffhalos" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffhalos/archive/v{{ version }}.tar.gz
-  sha256: 2a11d73ea724fc6d8ebb77ce6ce08265c667cb9637925352f227adea2f16dc5e
+  sha256: b9d306ececc6889aa6888edda610d2ec420ee6e7a8dec26798a1e49eda02780e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
